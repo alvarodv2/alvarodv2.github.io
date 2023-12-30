@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Titan+One&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: transform 0.5s ease; /* Agregamos una transición suave al desplazamiento */
+   
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-right: 2%;
+}
+
+.logo img {
+    max-width: 60%;
+    transition: transform 0.3s ease-out;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.logo:hover img {
+    transform: scale(1.1);
+}
+
+.imagen {
+    width: 100vw;
+    height: auto;
+}
+
+.linea-separacion {
+    width: 100vw;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+}
+
+
+.h1quienesSomos{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 3%;
+    text-align: center;
+
+}
+.text-box-left{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 3%;
+    margin-left: 3%;
+    text-align: justify;
+    font-size: 20px;
+    width: 48%;
+    float: left;
+}
+
+.text-box-right{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 3%;
+    margin-left: 3%;
+    text-align: justify;
+    font-size: 20px;
+    width: 48%;
+    float: right;
+}
+
+
+.container {
+
+    max-width: 70vw;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ddcfcf85;
+    box-shadow: 0 0 10px rgba(226, 226, 226, 0.1);
+}
+
+.text-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.menu-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: #fff;
+}
+
+.menu-btn span {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 5px 0;
+    display: block;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
+    padding-top: 60px;
+    transition: left 0.6s ease;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 15px;
+    border-bottom: 1px solid #555;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+
+.menu-btn.active + .menu {
+    left: 0;
+}
+
+.menu-btn.active + .content {
+    margin-left: 250px;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #ccc;
+}
+
+.fototo{
+
+    height: 150%;
+    width: 100%;
+    margin-top: 180%;
+}

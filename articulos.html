@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIVERA | Artículos</title>
+    <link rel="icon" href="img/favicon3.ico" type="ico"/>
+    
+    
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&family=Rubik+Bubbles&family=Titan+One&display=swap'); 
+
+        body {
+            background-color: rgb(172, 125, 125);
+            background-image: url(img/articulo2.jpg);
+            background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+            background-position: center; /* Centra la imagen en el fondo */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .article {
+            width: 500px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #000000;
+        }
+
+        .article img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .article .description {
+            padding: 15px;
+            text-align: justify;
+        }
+
+
+        .h3{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        .mifondo{
+            width: 100%;
+            padding: 0%;
+        }
+        
+        aside {
+            
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 0; /* Elimina el margen por defecto */
+        }
+
+        aside img {
+            max-width: 10%;
+            height: auto;
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+    
+.navbar {
+    background-color: #000000;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+    width: 30px;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #000000;
+    top: 0;
+    right: 60px; /* Ajusta la posición hacia la izquierda */
+    width: 100px; /* Ajusta el ancho según sea necesario */
+    z-index: 1;
+}
+
+.menu a {
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+}  
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="menu-btn" onclick="window.location.href='index.html'">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+        </div>
+        <div class="menu">
+            <a href="index.html"></a>
+            <!-- Agrega más elementos de menú según sea necesario -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="article">
+            <img src="img/fondo.jpg" alt="Imagen 1">
+            <div class="description">
+                <h3 class="h3"><strong>ARQUITECTURA MODERNA</strong></h3>
+                <p>Descubre la creatividad y funcionalidad en la arquitectura moderna, rompiendo los esquemas de la arquitectura tradicional. Desde <strong>RIVERA Architecture</strong>, confiamos plenamente en la apuesta por este tipo de arquitectura, ajustándonos a lo que marca el mercado. </p>
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="img/articulos.jpg" alt="Imagen 2">
+            <div class="description">
+                <h3 class="h3">DISEÑO URBANO</h3>
+                <p>Este campo aborda la organización del espacio público, la distribución de infraestructuras y la creación de entornos sostenibles. Desde la disposición de edificios hasta la incorporación de espacios verdes y la promoción de la movilidad.</p>
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="img/artículo3.jpg" alt="Imagen 3">
+            <div class="description">
+                <h3 class="h3">ARQUITECTURA SOSTENIBLE</h3>
+                <p>Este paradigma arquitectónico, nos centramos en la utilización eficiente de recursos, la minimización del impacto ambiental y la creación de espacios que promueven la salud y el bienestar. Todos los elementos usados en nuestros proyectos son regulados por expertos, dando una plena atención a la Ley 7/2022, de 8 de abril, de residuos y suelos contaminados para una economía circular.</p>
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="img/articulos4.jpg" alt="Imagen 4">
+            <div class="description">
+                <h3 class="h3">INNOVACIONES ARQUITECTÓNICAS</h3>
+                <p>Estos avances revolucionarios no solo desafían las convenciones tradicionales, sino que también encapsulan la esencia de la evolución arquitectónica en respuesta a la demanda generada por la sociedad, la tecnología y el medio ambiente. </p>
+            </div>
+        </div>
+
+    </div>
+
+    <aside class="mifondo">
+        <img src="img/favicon.ico" alt="RIVERA Group" />
+        <p><strong>RIVERA | Architecture &copy; 2023 </strong></p>
+        <p><strong> All rights reserved.</strong></p>
+    </aside>
+    
+
+    
+
+</body>
+</html>
